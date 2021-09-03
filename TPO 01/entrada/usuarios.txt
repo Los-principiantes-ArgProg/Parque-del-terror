@@ -1,5 +1,5 @@
 4
-Eowyn,Aventura,10,8
-Gandalf,Paisaje,100,5
-Sam,Degustación,36,8
-Galadriel,Paisaje,120,6
+Eowyn,10,8,Aventura
+Gandalf,100,5,Paisajes
+Sam,36,8,Degustacion
+Galadriel,120,6,Paisajes
