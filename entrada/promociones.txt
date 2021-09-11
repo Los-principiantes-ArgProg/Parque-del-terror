@@ -1,0 +1,5 @@
+4
+Porcentual,Pack Degustacion,DEGUSTACION,La Posada de Hades;Canibalismo y cervezas,20
+Absoluta,Pack Adrenalina,ADRENALINA,Castillo de Drácula;Nido de Dragones;Laberinto
+AxB,Pack Paseo,PASEO,Bosque Encantado;Lago del Terror;Tren Fantasma
+Absoluta,Pack Realidad Virtual,SIMULACION,Mansión embrujada;Maldición de DarKastle;Invisibles
