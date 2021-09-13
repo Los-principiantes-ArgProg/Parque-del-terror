@@ -25,17 +25,8 @@ public class Cajero {
 
 	@Override
 	public String toString() {
-		return "Cajero [Usuarios = \n" + Arrays.toString(usuarios) + "] \n" + " [Atracciones = \n"
-				+ Arrays.toString(atracciones) + "] \n" + " [Promociones = \n" + Arrays.toString(promociones) + "]";
-	}
-
-	public Atraccion obtenerAtraccionPorNombre(String nombre) {
-		for (Atraccion atraccion : atracciones) {
-			if (atraccion.getNombre().equals(nombre)) {
-				return atraccion;
-			}
-		}
-		return null;
+		return "Cajero [Usuarios = \n" + Arrays.toString(usuarios) + "] \n" + " [Atracciones = \n" + Arrays.toString(atracciones)
+				+ "] \n" + " [Promociones = \n" + Arrays.toString(promociones) + "]";
 	}
 
 	/*
@@ -51,5 +42,13 @@ public class Cajero {
 	 * 
 	 * }
 	 */
-
+	public Atraccion obtenerAtraccionPorNombre(String nombre) {
+		for (Atraccion atraccion : atracciones) {
+			if (atraccion.getNombre().equals(nombre)) {
+				return atraccion;
+			}
+		}
+		return null;
+	}
+	
 }

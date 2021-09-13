@@ -1,8 +1,0 @@
-8
-Bosque Encantado,50,240,25,Paisajes
-Lago del Terror,40,120,10,Paisajes
-Castillo de Dracula,25,75,10,Aventura
-La Posada de Hades,50,60,50,Degustacion
-Nido de Dragones,35,100,2,Paisajes
-Laberinto,50,20,4,Aventura
-Canibalismo y cervezas,28,60,20,Degustacion

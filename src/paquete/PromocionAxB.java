@@ -14,7 +14,6 @@ public class PromocionAxB extends Promocion {
 			devolucionCalculo += atracciones[c].getCostoVisita();
 		}
 		return devolucionCalculo;
-
 	}
 
 	public int getTiempoPromedio() {

@@ -131,13 +131,15 @@ public abstract class Archivo {
 
 				if (tipoPromocion.equals("Porcentual")) {
 
-					double descuento = Double.parseDouble(datosPromocion[4]);
+					int descuento = Integer.parseInt(datosPromocion[4]);
 
 					promociones[indice++] = new PromocionPorcentual(nombre, tipo, atracciones, descuento);
 				}
 				if (tipoPromocion.equals("Absoluta")) {
 
-					promociones[indice++] = new PromocionAbsoluta(nombre, tipo, atracciones);
+					int precioPromocion = Integer.parseInt(datosPromocion[4]);
+
+					promociones[indice++] = new PromocionAbsoluta(nombre, tipo, atracciones, precioPromocion);
 				}
 				if (tipoPromocion.equals("AxB")) {
 
