@@ -5,9 +5,6 @@ import java.io.IOException;
 
 public abstract class Archivo {
 
-	public Cajero cajero = new Cajero();
-
-	// Importa de txt y devuelve un array de Objetos tipo Atraccion
 	public static Atraccion[] obtenerAtraccionesDesdeArchivo() {
 		File archivo = null;
 		FileReader fr = null;
@@ -98,7 +95,7 @@ public abstract class Archivo {
 		return usuarios;
 	}
 
-	public static Promocion[] obtenerPromocionesDesdeArchivo(Cajero cajero) {
+	public static Promocion[] obtenerPromocionesDesdeArchivo() {
 
 		File archivo = null;
 		FileReader fr = null;
@@ -126,7 +123,7 @@ public abstract class Archivo {
 				Atraccion[] atracciones = new Atraccion[atraccionesString.length];
 
 				for (int i = 0; i < atraccionesString.length; i++) {
-					atracciones[i] = cajero.obtenerAtraccionPorNombre(atraccionesString[i]);
+					atracciones[i] = Oferta.obtenerAtraccionPorNombre(atraccionesString[i]);
 				}
 
 				if (tipoPromocion.equals("Porcentual")) {

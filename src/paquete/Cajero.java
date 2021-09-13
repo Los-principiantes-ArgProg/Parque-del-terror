@@ -1,37 +1,49 @@
 package paquete;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 
 public class Cajero {
-	private Usuario[] usuarios;
-
+	private static Usuario[] usuarios;
 	private Atraccion[] atracciones;
 	private Promocion[] promociones;
 
-	public Cajero() {
+	public void creadorUsuarios(Usuario[] visitantes) {
 
-	}
+		usuarios = Arrays.copyOf(visitantes, visitantes.length);
+		// solo para comprobar que funcione, hay que sacarlo
+		for (Usuario visitante : visitantes) {
+			System.out.println(visitante);
 
-	public void agregarTodosUsuarios(Usuario[] usuarios) {
-		this.usuarios = usuarios;
-	}
+		}
 
-	public void agregarTodasAtracciones(Atraccion[] atracciones) {
-		this.atracciones = atracciones;
-	}
-
-	public void agregarTodasPromociones(Promocion[] promociones) {
-		this.promociones = promociones;
-	}
-
-	public Atraccion[] getAtracciones() {
-		return atracciones;
 	}
 
 	@Override
 	public String toString() {
 		return "Cajero [Usuarios = \n" + Arrays.toString(usuarios) + "] \n" + " [Atracciones = \n"
 				+ Arrays.toString(atracciones) + "] \n" + " [Promociones = \n" + Arrays.toString(promociones) + "]";
+	}
+
+	private static void recorredorUsuarios(Usuario[] usuarios) {
+		ArrayList<Atraccion> itinerario = null;
+
+		int c;
+
+		for (c = 0; c < usuarios.length; c++) {
+
+			itinerario = Oferta.creadorDeOfertas(usuarios[c]);
+			/*
+			 * Aca cada vez que se devuelva el itinerario de un usuario se debe guardar en
+			 * el archivo seprarndolo por el nombre del usuario
+			 */
+			// SACO ESTO UN RATITO
+			/*
+			 * for (int i = 0; i < usuarios.length; i++) {
+			 * System.out.println(itinerario.get(i).getNombre()); }
+			 */
+		}
+
 	}
 
 	/*
@@ -47,13 +59,22 @@ public class Cajero {
 	 * 
 	 * }
 	 */
-	public Atraccion obtenerAtraccionPorNombre(String nombre) {
-		for (Atraccion atraccion : atracciones) {
-			if (atraccion.getNombre().equals(nombre)) {
-				return atraccion;
-			}
-		}
-		return null;
-	}
 
+	public static void main(String[] args) {
+
+		Oferta.creadorPaseos(Archivo.obtenerAtraccionesDesdeArchivo());
+
+		Oferta.creadorPromociones(Archivo.obtenerPromocionesDesdeArchivo());
+
+		ArrayList<Atraccion> itinerarioFinal = null;
+
+		recorredorUsuarios(Archivo.obtenerUsuariosDesdeArchivo());
+
+		// Leer por consola y mostrar por pantalla
+		/*
+		 * Scanner in = new Scanner(System.in); String entradaConsola = in.nextLine();
+		 * System.err.println(entradaConsola); in.close(); }
+		 */
+
+	}
 }

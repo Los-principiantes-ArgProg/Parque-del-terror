@@ -1,6 +1,7 @@
 package paquete;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.Iterator;
 import java.util.Scanner;
@@ -11,35 +12,39 @@ public class Oferta {
 	private static Promocion[] promociones;
 	private static ArrayList<Atraccion> listaAtraccion = new ArrayList<>();
 
-	/*public static void creadorPaseos() {
-		paseos = new Atraccion[8];
+	public static void creadorPaseos(Atraccion[] atracciones) {
+		paseos = Arrays.copyOfRange(atracciones, 0, atracciones.length);
+		// solo para comprobar que funcione, hay que sacarlo
+		for (Atraccion atraccion : atracciones) {
+			System.out.println(atraccion);
 
-		paseos[0] = new Atraccion("Bosque encantado", 50, 240, 25, TipoAtraccion.Paisajes);
-		paseos[1] = new Atraccion("Lago del terror", 40, 120, 10, TipoAtraccion.Paisajes);
-		paseos[2] = new Atraccion("Castillo de Dracula", 25, 75, 10, TipoAtraccion.Aventura);
-		paseos[3] = new Atraccion("Cueva de la resurreccion", 20, 60, 5, TipoAtraccion.Aventura);
-		paseos[4] = new Atraccion("La posada de Hades", 50, 60, 50, TipoAtraccion.Degustacion);
-		paseos[5] = new Atraccion("Nido de dragones", 35, 100, 2, TipoAtraccion.Paisajes);
-		paseos[6] = new Atraccion("Laberinto", 50, 20, 4, TipoAtraccion.Aventura);
-		paseos[7] = new Atraccion("Canibalismo y cervezas", 28, 60, 20, TipoAtraccion.Degustacion);
+		}
 
 	}
 
-	public static void creadorPromociones() {
-		promociones = new Promocion[3];
-		Atraccion[] paisajes = { paseos[0], paseos[1], paseos[5] };
-		Atraccion[] aventura = { paseos[2], paseos[3], paseos[6] };
-		Atraccion[] degustacion = { paseos[4], paseos[7] };
+	public static void creadorPromociones(Promocion[] promos) {
+		promociones = Arrays.copyOfRange(promos, 0, promos.length);
+		// solo para comprobar que funcione, hay que sacarlo
+		for (Promocion promocion : promociones) {
+			System.out.println(promocion);
 
-		promociones[0] = new PromocionPorcentual("Pack paisajes", TipoAtraccion.Paisajes, paisajes);
-		promociones[1] = new PromocionAbsoluta("Pack aventura", TipoAtraccion.Aventura, aventura);
-		promociones[2] = new PromocionAxB("Pack degustacion", TipoAtraccion.Degustacion, degustacion);
-	}*/
+		}
+
+	}
+
+	public static Atraccion obtenerAtraccionPorNombre(String nombre) {
+		for (Atraccion atraccion : paseos) {
+			if (atraccion.getNombre().equals(nombre)) {
+				return atraccion;
+			}
+		}
+		return null;
+	}
 
 	public static ArrayList<Atraccion> creadorDeOfertas(Usuario visitante) {
 		int c, contador, x;
 		boolean condicion = true;
-		//boolean condicionAtraccion = true;
+		// boolean condicionAtraccion = true;
 		ArrayList<Atraccion> devolucion = new ArrayList<>();
 		ArrayList<Atraccion> listaPreferida = new ArrayList<>();
 		ArrayList<Atraccion> listaAtraccionOrdenada = new ArrayList<>();
@@ -95,7 +100,7 @@ public class Oferta {
 										listaAtraccion.remove(z);
 										System.out.println("SI");
 									}
-									
+
 								}
 							}
 							for (int a = 0; a < promociones[contador].atracciones.length; a++) {
@@ -122,9 +127,7 @@ public class Oferta {
 				}
 			}
 
-		
-
-		contador++;
+			contador++;
 		}
 
 		/*
@@ -135,7 +138,8 @@ public class Oferta {
 		 */
 		listaAtraccionOrdenada.clear();
 		listaAtraccionOrdenada = OrdenaientoAtracciones(listaAtraccion);
-		//listaAtraccionOrdenada=  (ArrayList<Atraccion>)OrdenaientoAtracciones(listaAtraccion).clone();
+		// listaAtraccionOrdenada=
+		// (ArrayList<Atraccion>)OrdenaientoAtracciones(listaAtraccion).clone();
 
 		for (int i = 0; i < listaAtraccionOrdenada.size(); i++) {
 			if (visitante.getAtraccionPreferida() == listaAtraccionOrdenada.get(i).getTipoAtraccion()) {

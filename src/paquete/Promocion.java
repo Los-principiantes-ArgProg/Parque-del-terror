@@ -19,7 +19,15 @@ public abstract class Promocion {
 		return tipo;
 	}
 
-	protected abstract int getTiempoPromedio();
+	public int getTiempoPromedio() {
+		int devolucionTiempo = 0;
+
+		for (int c = 0; c < atracciones.length; c++) {
+			devolucionTiempo += atracciones[c].getTiempoPromedio();
+		}
+
+		return devolucionTiempo;
+	}
 
 	protected abstract int calculoPromocion();
 
