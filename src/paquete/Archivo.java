@@ -5,7 +5,7 @@ import java.io.IOException;
 
 public abstract class Archivo {
 
-	// public static Cajero cajero = new Cajero();
+	public Cajero cajero = new Cajero();
 
 	// Importa de txt y devuelve un array de Objetos tipo Atraccion
 	public static Atraccion[] obtenerAtraccionesDesdeArchivo() {

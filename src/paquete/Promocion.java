@@ -29,4 +29,8 @@ public abstract class Promocion {
 				+ Arrays.toString(atracciones) + "]";
 	}
 
+	public String getNombre() {
+		return nombre;
+	}
+
 }

@@ -6,6 +6,7 @@ public class App {
 
 	public static void main(String[] args) {
 		Cajero cajero = new Cajero();
+		
 		cajero.agregarTodosUsuarios(Archivo.obtenerUsuariosDesdeArchivo());
 		// XXX La siguiente linea esta FEA. No debería pasarle concesionaria así
 		cajero.agregarTodasAtracciones(Archivo.obtenerAtraccionesDesdeArchivo());

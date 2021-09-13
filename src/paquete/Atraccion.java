@@ -43,4 +43,9 @@ public class Atraccion {
 				+ costoVisita + ", tiempo promedio = " + tiempoPromedio + "]\n";
 	}
 
+	public void setCupoMaximoDiario(int i) {
+		cupoMaximoDiario = i;
+		
+	}
+
 }

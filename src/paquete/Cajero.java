@@ -4,6 +4,7 @@ import java.util.Arrays;
 
 public class Cajero {
 	private Usuario[] usuarios;
+
 	private Atraccion[] atracciones;
 	private Promocion[] promociones;
 
@@ -23,10 +24,14 @@ public class Cajero {
 		this.promociones = promociones;
 	}
 
+	public Atraccion[] getAtracciones() {
+		return atracciones;
+	}
+
 	@Override
 	public String toString() {
-		return "Cajero [Usuarios = \n" + Arrays.toString(usuarios) + "] \n" + " [Atracciones = \n" + Arrays.toString(atracciones)
-				+ "] \n" + " [Promociones = \n" + Arrays.toString(promociones) + "]";
+		return "Cajero [Usuarios = \n" + Arrays.toString(usuarios) + "] \n" + " [Atracciones = \n"
+				+ Arrays.toString(atracciones) + "] \n" + " [Promociones = \n" + Arrays.toString(promociones) + "]";
 	}
 
 	/*
@@ -50,5 +55,5 @@ public class Cajero {
 		}
 		return null;
 	}
-	
+
 }
