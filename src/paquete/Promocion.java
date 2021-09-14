@@ -40,5 +40,7 @@ public abstract class Promocion {
 	public String getNombre() {
 		return nombre;
 	}
+	
+	
 
 }

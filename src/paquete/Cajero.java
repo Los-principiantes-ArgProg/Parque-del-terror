@@ -1,12 +1,13 @@
 package paquete;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 
 public class Cajero {
 	private static Usuario[] usuarios;
-	private Atraccion[] atracciones;
-	private Promocion[] promociones;
+	// private Atraccion[] atracciones;
+	// private Promocion[] promociones;
 
 	public void creadorUsuarios(Usuario[] visitantes) {
 
@@ -19,48 +20,22 @@ public class Cajero {
 
 	}
 
-	@Override
-	public String toString() {
-		return "Cajero [Usuarios = \n" + Arrays.toString(usuarios) + "] \n" + " [Atracciones = \n"
-				+ Arrays.toString(atracciones) + "] \n" + " [Promociones = \n" + Arrays.toString(promociones) + "]";
-	}
-
-	private static void recorredorUsuarios(Usuario[] usuarios) {
-		ArrayList<Atraccion> itinerario = null;
+	private static void recorredorUsuarios(Usuario[] usuarios) throws IOException {
+		ArrayList<Atraccion> itinerario = new ArrayList<>();
 
 		int c;
 
 		for (c = 0; c < usuarios.length; c++) {
 
-			itinerario = Oferta.creadorDeOfertas(usuarios[c]);
-			/*
-			 * Aca cada vez que se devuelva el itinerario de un usuario se debe guardar en
-			 * el archivo seprarndolo por el nombre del usuario
-			 */
-			// SACO ESTO UN RATITO
-			/*
-			 * for (int i = 0; i < usuarios.length; i++) {
-			 * System.out.println(itinerario.get(i).getNombre()); }
-			 */
+			itinerario.addAll(Oferta.creadorDeOfertas(usuarios[c]));
+
+			Itinerario.creadorItinerario(usuarios[c], Archivo.obtenerAtraccionesDesdeArchivo(),
+					Archivo.obtenerPromocionesDesdeArchivo());
 		}
 
 	}
 
-	/*
-	 * public static void main(String[] Args) { recorredorUsuarios(); }
-	 * 
-	 * private static void recorredorUsuarios() {
-	 * 
-	 * int c;
-	 * 
-	 * for (c = 0; c < usuarios.length; c++) { while (usuarios[c].getPresupuesto() >
-	 * 0 && usuarios[c].getTiempoDisponible() > 0) {
-	 * Oferta.creadorDeOfertas(usuarios[c]); } }
-	 * 
-	 * }
-	 */
-
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 
 		Oferta.creadorPaseos(Archivo.obtenerAtraccionesDesdeArchivo());
 

@@ -195,6 +195,8 @@ public class Oferta {
 			}
 		}
 
+		// return Usuario[i].crearItinerario(devolucion);
+
 		return devolucion;
 
 	}
