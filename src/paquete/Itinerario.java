@@ -3,11 +3,11 @@ package paquete;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.Arrays;
+import java.util.ArrayList;
 
 public class Itinerario {
 
-	public static void creadorItinerario(Usuario usuarios, Atraccion[] atracciones, Promocion[] promociones) throws IOException {
+	public static void creadorItinerario(Usuario usuarios, ArrayList<Atraccion> devolucionAtracciones, ArrayList<Promocion> promocionesCompradas) throws IOException {
 
 		PrintWriter salida = new PrintWriter(new FileWriter("salida/Itinerario" + usuarios.getNombre() + ".txt"));
 
@@ -17,18 +17,18 @@ public class Itinerario {
 		int costoTotal = 0;
 		int tiempoTotal = 0;
 		
-		for (int i = 0; i < atracciones.length; i++) {
-			salida.println(atracciones[i]);
-			costoTotal += atracciones[i].getCostoVisita();
-			tiempoTotal += atracciones[i].getTiempoPromedio();
+		for (int i = 0; i < devolucionAtracciones.size(); i++) {
+			salida.println(devolucionAtracciones.get(i));
+			costoTotal += devolucionAtracciones.get(i).getCostoVisita();
+			tiempoTotal += devolucionAtracciones.get(i).getTiempoPromedio();
 		}
 		
 		salida.println("También adquirió las siguientes promociones: ");
 		
-		for (int i = 0; i < promociones.length; i++) {
-			salida.println(promociones[i]);
-			costoTotal += promociones[i].calculoPromocion();
-			tiempoTotal += promociones[i].getTiempoPromedio();
+		for (int i = 0; i < promocionesCompradas.size(); i++) {
+			salida.println(promocionesCompradas.get(i));
+			costoTotal += promocionesCompradas.get(i).calculoPromocion();
+			tiempoTotal += promocionesCompradas.get(i).getTiempoPromedio();
 		}
 		//Modificar el pasaje a horas
 		double tiempoTotalHoras = tiempoTotal/60;

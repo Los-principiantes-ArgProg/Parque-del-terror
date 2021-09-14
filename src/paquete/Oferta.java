@@ -1,5 +1,6 @@
 package paquete;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
@@ -14,21 +15,11 @@ public class Oferta {
 
 	public static void creadorPaseos(Atraccion[] atracciones) {
 		paseos = Arrays.copyOfRange(atracciones, 0, atracciones.length);
-		// solo para comprobar que funcione, hay que sacarlo
-		for (Atraccion atraccion : atracciones) {
-			System.out.println(atraccion);
-
-		}
 
 	}
 
 	public static void creadorPromociones(Promocion[] promos) {
 		promociones = Arrays.copyOfRange(promos, 0, promos.length);
-		// solo para comprobar que funcione, hay que sacarlo
-		for (Promocion promocion : promociones) {
-			System.out.println(promocion);
-
-		}
 
 	}
 
@@ -41,26 +32,30 @@ public class Oferta {
 		return null;
 	}
 
-	public static ArrayList<Atraccion> creadorDeOfertas(Usuario visitante) {
-		int c, contador, x;
+	public static ArrayList<Atraccion> creadorDeOfertas(Usuario visitante) throws IOException {
+
+		int contador, x;
 		boolean condicion = true;
-		// boolean condicionAtraccion = true;
-		ArrayList<Atraccion> devolucion = new ArrayList<>();
-		ArrayList<Atraccion> listaPreferida = new ArrayList<>();
+		Promocion[] promocionesCompradasDevolucion;
+		Atraccion[] atraccionesComparadasDevolucion;
+
+		ArrayList<Atraccion> devolucionAtracciones = new ArrayList<>();
+		ArrayList<Atraccion> listaAtraccionesPreferidas = new ArrayList<>();
+		ArrayList<Atraccion> listaAtraccionesNOPreferidas = new ArrayList<>();
+
 		ArrayList<Atraccion> listaAtraccionOrdenada = new ArrayList<>();
+		ArrayList<Promocion> promocionesCompradas = new ArrayList<>();
+
 		contador = 0;
 		x = 0;
+
+		listaAtraccion.clear();
 
 		for (int r = 0; r < paseos.length; r++) {
 			listaAtraccion.add(paseos[r]);
 		}
 
-		/*
-		 * ArrayList<TipoAtraccion> tipos = null;
-		 * 
-		 * tipos.add(TipoAtraccion.Aventura); tipos.add(TipoAtraccion.Paisajes);
-		 * tipos.add(TipoAtraccion.Degustacion);
-		 */
+		listaAtraccionOrdenada.addAll(OrdenaientoAtracciones(listaAtraccion));
 
 		/*
 		 * Antes de cada if de las promociones debemos comprobar que el usuario tiene el
@@ -71,17 +66,11 @@ public class Oferta {
 
 		while (contador < promociones.length && condicion) {
 
-			/*
-			 * Este while esta considerado para trabajar con solo una promocion por tipo de
-			 * atraccion
-			 */
-
 			while (x < promociones[contador].atracciones.length && condicion) {
-				if (promociones[contador].atracciones[x].getCupoMaximoDiario() <= 0) {
+				if (promociones[contador].atracciones[x].getCupoMaximoDiario() < 0) {
 					condicion = false;
 				}
 				x++;
-
 			}
 
 			if (condicion) {
@@ -90,44 +79,48 @@ public class Oferta {
 						if (visitante.getPresupuesto() >= promociones[contador].calculoPromocion()) {
 
 							if (ofertaPromocion(visitante.getAtraccionPreferida(), promociones[contador])) {
-
+								promocionesCompradas.add(promociones[contador]);
 								for (int a = 0; a < promociones[contador].atracciones.length; a++) {
-									devolucion.add(promociones[contador].atracciones[a]);
-								}
 
-								for (int z = 0; z < listaAtraccion.size(); z++) {
-									if (listaAtraccion.get(z).getTipoAtraccion() == promociones[contador].getTipo()) {
-										listaAtraccion.remove(z);
-										System.out.println("SI");
-									}
+									listaAtraccionOrdenada.remove(promociones[contador].atracciones[a]);
 
-								}
-							}
-							for (int a = 0; a < promociones[contador].atracciones.length; a++) {
-								for (int q = 0; q < paseos.length; q++) {
-									if (paseos[q].getNombre()
-											.equalsIgnoreCase(promociones[contador].atracciones[a].getNombre())) {
-										paseos[q].setCupoMaximoDiario(paseos[q].getCupoMaximoDiario() - 1);
+									for (int q = 0; q < paseos.length; q++) {
+										if (paseos[q].getNombre()
+												.equalsIgnoreCase(promociones[contador].atracciones[a].getNombre())) {
+											paseos[q].setCupoMaximoDiario(paseos[q].getCupoMaximoDiario() - 1);
+										}
 									}
 								}
-							}
-							visitante.setPresupuesto(
-									visitante.getPresupuesto() - promociones[contador].calculoPromocion());
-							visitante.setTiempoDisponible(
-									visitante.getTiempoDisponible() - promociones[contador].getTiempoPromedio());
 
-							/*
-							 * aca se agrega las atracciones que participan de la promocion al itinerario
-							 * por medio de devolucion.add(), tambien se debe restar el tiempo y el monto al
-							 * usuario.Y tambien el cupo por atraccion.
-							 */
+								visitante.setPresupuesto(
+										visitante.getPresupuesto() - promociones[contador].calculoPromocion());
+								visitante.setTiempoDisponible(
+										visitante.getTiempoDisponible() - promociones[contador].getTiempoPromedio());
+
+							} else {
+								for (int c = 0; c < promociones[contador].atracciones.length; c++) {
+									listaAtraccionesPreferidas.add(promociones[contador].atracciones[c]);
+									listaAtraccionOrdenada.remove(promociones[contador].atracciones[c]);
+								}
+							}
 
 						}
 					}
 				}
+
 			}
 
 			contador++;
+		}
+
+		for (int i = 0; i < listaAtraccionOrdenada.size(); i++) {
+			if (listaAtraccionOrdenada.get(i).getTipoAtraccion() == visitante.getAtraccionPreferida()) {
+				listaAtraccionesPreferidas.add(listaAtraccionOrdenada.get(i));
+
+			} else {
+				listaAtraccionesNOPreferidas.add(listaAtraccionOrdenada.get(i));
+
+			}
 		}
 
 		/*
@@ -136,34 +129,35 @@ public class Oferta {
 		 * siempre comprobando si el usuario tiene monto, si tiene tiempo y si hay cupo
 		 * en la atraccion
 		 */
-		listaAtraccionOrdenada.clear();
-		listaAtraccionOrdenada = OrdenaientoAtracciones(listaAtraccion);
-		// listaAtraccionOrdenada=
-		// (ArrayList<Atraccion>)OrdenaientoAtracciones(listaAtraccion).clone();
 
-		for (int i = 0; i < listaAtraccionOrdenada.size(); i++) {
-			if (visitante.getAtraccionPreferida() == listaAtraccionOrdenada.get(i).getTipoAtraccion()) {
-				listaPreferida.add(listaAtraccionOrdenada.get(i));
-				listaAtraccionOrdenada.remove(i);
-			}
+		for (int z = 0; z < listaAtraccionesPreferidas.size(); z++) {
+			System.out.println(listaAtraccionesPreferidas.get(z).getNombre());
+		}
+		System.out.println("-----");
+		for (int y = 0; y < listaAtraccionesNOPreferidas.size(); y++) {
+			System.out.println(listaAtraccionesNOPreferidas.get(y).getNombre());
+		}
+		System.out.println("-----");
+		for (int w = 0; w < promocionesCompradas.size(); w++) {
+			System.out.println(promocionesCompradas.get(w).getNombre());
 		}
 
-		if (listaPreferida.size() != 0) {
-			for (int w = 0; w < listaPreferida.size(); w++) {
-				if (visitante.getPresupuesto() >= listaPreferida.get(w).getCostoVisita()) {
-					if (visitante.getTiempoDisponible() >= listaPreferida.get(w).getTiempoPromedio()) {
-						if (listaAtraccionOrdenada.get(w).getCupoMaximoDiario() > 0) {
-							if (ofertaAtraccion(visitante, listaPreferida.get(w))) {
+		if (listaAtraccionesPreferidas.size() != 0) {
+			for (int i = 0; i < listaAtraccionesPreferidas.size(); i++) {
+				if (tieneDineroYTiempo(visitante, listaAtraccionesNOPreferidas, i)) {
 
-								devolucion.add(listaPreferida.get(w));
+					if (listaAtraccionOrdenada.get(i).getCupoMaximoDiario() > 0) {
+						if (ofertaAtraccion(visitante, listaAtraccionesPreferidas.get(i))) {
 
-								listaPreferida.get(w)
-										.setCupoMaximoDiario(listaPreferida.get(w).getCupoMaximoDiario() - 1);
-								visitante.setPresupuesto(
-										visitante.getPresupuesto() - listaPreferida.get(w).getCostoVisita());
-								visitante.setTiempoDisponible(
-										visitante.getTiempoDisponible() - listaPreferida.get(w).getTiempoPromedio());
-							}
+							devolucionAtracciones.add(listaAtraccionesPreferidas.get(i));
+
+							listaAtraccionesPreferidas.get(i)
+									.setCupoMaximoDiario(listaAtraccionesPreferidas.get(i).getCupoMaximoDiario() - 1);
+							visitante.setPresupuesto(
+									visitante.getPresupuesto() - listaAtraccionesPreferidas.get(i).getCostoVisita());
+							visitante.setTiempoDisponible(visitante.getTiempoDisponible()
+									- listaAtraccionesPreferidas.get(i).getTiempoPromedio());
+
 						}
 					}
 				}
@@ -171,60 +165,80 @@ public class Oferta {
 
 		}
 
-		/* Aca se avisa por consola que se seguira ofeciendo atracciones */
+		/* aca se debe ofrecer promociones que no le gustan */
 
-		if (listaAtraccionOrdenada.size() != 0) {
-			for (int w = 0; w < listaAtraccionOrdenada.size(); w++) {
-				if (visitante.getPresupuesto() >= listaAtraccionOrdenada.get(w).getCostoVisita()) {
-					if (visitante.getTiempoDisponible() >= listaAtraccionOrdenada.get(w).getTiempoPromedio()) {
-						if (listaAtraccionOrdenada.get(w).getCupoMaximoDiario() > 0) {
-							if (ofertaAtraccion(visitante, listaAtraccionOrdenada.get(w))) {
+		if (listaAtraccionesNOPreferidas.size() != 0) {
+			for (int w = 0; w < listaAtraccionesNOPreferidas.size(); w++) {
+				if (tieneDineroYTiempo(visitante, listaAtraccionesNOPreferidas, w)) {
 
-								devolucion.add(listaAtraccionOrdenada.get(w));
+					if (listaAtraccionesNOPreferidas.get(w).getCupoMaximoDiario() > 0) {
+						if (ofertaAtraccion(visitante, listaAtraccionesNOPreferidas.get(w))) {
 
-								listaAtraccionOrdenada.get(w)
-										.setCupoMaximoDiario(listaAtraccionOrdenada.get(w).getCupoMaximoDiario() - 1);
-								visitante.setPresupuesto(
-										visitante.getPresupuesto() - listaAtraccionOrdenada.get(w).getCostoVisita());
-								visitante.setTiempoDisponible(visitante.getTiempoDisponible()
-										- listaAtraccionOrdenada.get(w).getTiempoPromedio());
-							}
+							devolucionAtracciones.add(listaAtraccionesNOPreferidas.get(w));
+
+							listaAtraccionesNOPreferidas.get(w)
+									.setCupoMaximoDiario(listaAtraccionesNOPreferidas.get(w).getCupoMaximoDiario() - 1);
+							visitante.setPresupuesto(
+									visitante.getPresupuesto() - listaAtraccionesNOPreferidas.get(w).getCostoVisita());
+							visitante.setTiempoDisponible(visitante.getTiempoDisponible()
+									- listaAtraccionesNOPreferidas.get(w).getTiempoPromedio());
 						}
+
 					}
 				}
 			}
 		}
 
-		// return Usuario[i].crearItinerario(devolucion);
+		/* Aca se debe llamar a Archivo.creadorItinerario() y este metodo */
+		Itinerario.creadorItinerario(visitante, devolucionAtracciones, promocionesCompradas);
 
-		return devolucion;
+		return devolucionAtracciones;
 
 	}
 
+	private static boolean tieneDineroYTiempo(Usuario visitante, ArrayList<Atraccion> listaAtraccionesNOPreferidas,
+			int w) {
+		return visitante.getPresupuesto() >= listaAtraccionesNOPreferidas.get(w).getCostoVisita()
+				&& visitante.getTiempoDisponible() >= listaAtraccionesNOPreferidas.get(w).getTiempoPromedio();
+	}
+
 	private static boolean ofertaAtraccion(Usuario visitante, Atraccion paseo) {
-		Scanner entrada = new Scanner(System.in);
-		char entradaUsuario = ' ';
+
+		char entradaUs = ' ';
 
 		System.out.println("Quiere comprar el pase a la atraccion " + paseo.getNombre() + "? ");
 		System.out.println("La cual cuesta " + paseo.getCostoVisita() + ", y dura " + paseo.getTiempoPromedio() + "?");
 
-		while (!(entradaUsuario == 's' || entradaUsuario == 'n')) {
+		while (!(entradaUs == 's' || entradaUs == 'n')) {
 			System.out.println(
 					"Ingrese la letra 's' si quiere realizar la atraccion, de lo contrario ingrese la letra 'n'");
-			entradaUsuario = entrada.next().charAt(0);
-			entradaUsuario = Character.toLowerCase(entradaUsuario);
-			entrada.close();
+
+			entradaUs = entradaCar();
+
 		}
-		if (entradaUsuario == 's') {
+
+		if (entradaUs == 's') {
 			return true;
 		} else {
 			return false;
 		}
 	}
 
+	private static char entradaCar() {
+		Scanner in = new Scanner(System.in);
+		char entradaUs = ' ';
+
+		entradaUs = in.next().charAt(0);
+
+		in.nextLine();
+		entradaUs = Character.toLowerCase(entradaUs);
+
+		return entradaUs;
+
+	}
+
 	private static boolean ofertaPromocion(TipoAtraccion atraccionPreferida, Promocion promociones) {
 
-		Scanner entrada = new Scanner(System.in);
 		char entradaUsuario = ' ';
 
 		System.out.println("Quiere comprar el pase a la promocion: " + promociones.getNombre() + "? ");
@@ -239,10 +253,10 @@ public class Oferta {
 		while (!(entradaUsuario == 's' || entradaUsuario == 'n')) {
 			System.out.println(
 					"Ingrese la letra 's' si quiere comprar la promocion, de lo contrario ingrese la letra 'n'");
-			entradaUsuario = entrada.next().charAt(0);
-			entradaUsuario = Character.toLowerCase(entradaUsuario);
-			entrada.close();
+			entradaUsuario = entradaCar();
+
 		}
+
 		if (entradaUsuario == 's') {
 			return true;
 		} else {
