@@ -39,8 +39,8 @@ public class Atraccion {
 
 	@Override
 	public String toString() {
-		return "Atraccion [nombre = " + nombre + ", tipo de atraccion = " + atraccion + ", costo de visita = "
-				+ costoVisita + ", tiempo promedio = " + tiempoPromedio + "]\n";
+		return "Atraccion: " + nombre + ", tipo de atraccion: " + atraccion + ", costo de visita: "
+				+ costoVisita + ", tiempo promedio: " + tiempoPromedio + "\n";
 	}
 
 	public void setCupoMaximoDiario(int i) {

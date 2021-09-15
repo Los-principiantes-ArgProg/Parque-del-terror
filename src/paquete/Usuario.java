@@ -38,11 +38,11 @@ public class Usuario {
 	public TipoAtraccion getAtraccionPreferida() {
 		return atraccionPreferida;
 	}
-
+	
 	@Override
 	public String toString() {
-		return "Usuario [nombre = " + nombre + ", presupuesto = " + presupuesto + ", tiempo disponible = "
-				+ tiempoDisponible + ", atraccion preferida = " + atraccionPreferida + "]\n";
+		return "Usuario: " + nombre + " | Presupuesto: " + presupuesto + " monedas | Tiempo Disponible = "
+				+ tiempoDisponible + " minutos | Preferencia: " + atraccionPreferida + "\n";
 	}
 
 }

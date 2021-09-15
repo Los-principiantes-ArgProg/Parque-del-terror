@@ -1,0 +1,26 @@
+---------------------------ITINERARIO---------------------------
+
+Estado inicial
+Usuario: Sergio | Presupuesto: 150 monedas | Tiempo Disponible = 300 minutos | Preferencia: ADRENALINA
+
+Muchas gracias por su compra Sergio.
+
+Adquirió las siguientes atracciones: 
+
+	Atraccion: Mansión embrujada, tipo de atraccion: SIMULACION, costo de visita: 55, tiempo promedio: 50
+
+	Atraccion: Invisibles, tipo de atraccion: SIMULACION, costo de visita: 25, tiempo promedio: 25
+
+Adquirió las siguientes promociones: 
+
+	Promocion: Pack Adrenalina, de tipo: ADRENALINA, atracciones: Castillo de Drácula, Nido de Dragones, Laberinto., tiempo promedio: 90, que cuesta 70
+
+El costo total es de 150 monedas.
+
+El tiempo necesario para su itinerario es 2 horas y 45 minutos.
+
+Estado final
+Usuario: Sergio | Presupuesto: 0 monedas | Tiempo Disponible = 135 minutos | Preferencia: ADRENALINA
+
+----------------------------------------------------------------
+

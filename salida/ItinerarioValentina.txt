@@ -1,0 +1,13 @@
+Usuario: Valentina | Presupuesto: 100| Tiempo Disponible = 250 minutos | Preferencia: PASEO
+
+Muchas gracias por su compra Valentina
+Adquirió las siguientes promociones: 
+Promocion: Pack Paseo, que es de tipo: PASEO, con las atracciones: = [Atraccion [nombre = Bosque Encantado, tipo de atraccion = PASEO, costo de visita = 50, tiempo promedio = 80]
+, Atraccion [nombre = Lago del Terror, tipo de atraccion = PASEO, costo de visita = 40, tiempo promedio = 50]
+, Atraccion [nombre = Tren Fantasma, tipo de atraccion = PASEO, costo de visita = 30, tiempo promedio = 35]
+]
+
+El costo total es de 90 monedas.
+El tiempo necesario para su itinerario es 2 horas y 45 minutos.
+Su estado final es: Usuario: Valentina | Presupuesto: 10| Tiempo Disponible = 85 minutos | Preferencia: PASEO
+

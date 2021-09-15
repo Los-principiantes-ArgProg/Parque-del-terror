@@ -1,0 +1,13 @@
+Usuario: Soledad | Presupuesto: 350| Tiempo Disponible = 100 minutos | Preferencia: SIMULACION
+
+Muchas gracias por su compra Soledad
+Adquirió las siguientes promociones: 
+Promocion: Pack Realidad Virtual, que es de tipo: SIMULACION, con las atracciones: = [Atraccion [nombre = Mansión embrujada, tipo de atraccion = SIMULACION, costo de visita = 55, tiempo promedio = 40]
+, Atraccion [nombre = Maldición de DarKastle, tipo de atraccion = SIMULACION, costo de visita = 20, tiempo promedio = 30]
+, Atraccion [nombre = Invisibles, tipo de atraccion = SIMULACION, costo de visita = 25, tiempo promedio = 25]
+]
+
+El costo total es de 75 monedas.
+El tiempo necesario para su itinerario es 1 horas y 35 minutos.
+Su estado final es: Usuario: Soledad | Presupuesto: 275| Tiempo Disponible = 5 minutos | Preferencia: SIMULACION
+

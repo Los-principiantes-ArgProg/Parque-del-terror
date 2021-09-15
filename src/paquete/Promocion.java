@@ -33,14 +33,31 @@ public abstract class Promocion {
 
 	@Override
 	public String toString() {
-		return "Promocion [nombre = " + nombre + ", tipoDePromocion = " + tipo + ", atracciones = "
-				+ Arrays.toString(atracciones) + "]";
+		String nombreAtracciones = "";
+
+		for (int i = 0; i < atracciones.length; i++) {
+			nombreAtracciones += atracciones[i].getNombre();
+
+			if (!(i == atracciones.length - 1)) {
+				nombreAtracciones += ", ";
+			} else {
+				nombreAtracciones += ".";
+			}
+		}
+		return "Promocion: " + nombre + ", de tipo: " + tipo + ", atracciones: " + nombreAtracciones
+				+ ", tiempo promedio: " + getTiempoPromedio() + ", que cuesta " + calculoPromocion() + "\n";
 	}
 
 	public String getNombre() {
 		return nombre;
 	}
-	
-	
+
+	public Atraccion getAtraccionElemento(int i) {
+		return atracciones[i];
+	}
+
+	public Atraccion[] getAtraccion() {
+		return atracciones;
+	}
 
 }

@@ -1,0 +1,24 @@
+Usuario: Zacarias | Presupuesto: 300| Tiempo Disponible = 400 minutos | Preferencia: PASEO
+
+Muchas gracias por su compra Zacarias
+Adquirió las siguientes atracciones: 
+Atraccion [nombre = Mansión embrujada, tipo de atraccion = SIMULACION, costo de visita = 55, tiempo promedio = 40]
+
+Atraccion [nombre = La Posada de Hades, tipo de atraccion = DEGUSTACION, costo de visita = 50, tiempo promedio = 60]
+
+Atraccion [nombre = Canibalismo y cervezas, tipo de atraccion = DEGUSTACION, costo de visita = 40, tiempo promedio = 65]
+
+Atraccion [nombre = Nido de Dragones, tipo de atraccion = ADRENALINA, costo de visita = 35, tiempo promedio = 30]
+
+Atraccion [nombre = Castillo de Drácula, tipo de atraccion = ADRENALINA, costo de visita = 25, tiempo promedio = 40]
+
+Adquirió las siguientes promociones: 
+Promocion: Pack Paseo, que es de tipo: PASEO, con las atracciones: = [Atraccion [nombre = Bosque Encantado, tipo de atraccion = PASEO, costo de visita = 50, tiempo promedio = 80]
+, Atraccion [nombre = Lago del Terror, tipo de atraccion = PASEO, costo de visita = 40, tiempo promedio = 50]
+, Atraccion [nombre = Tren Fantasma, tipo de atraccion = PASEO, costo de visita = 30, tiempo promedio = 35]
+]
+
+El costo total es de 295 monedas.
+El tiempo necesario para su itinerario es 6 horas y 40 minutos.
+Su estado final es: Usuario: Zacarias | Presupuesto: 5| Tiempo Disponible = 0 minutos | Preferencia: PASEO
+

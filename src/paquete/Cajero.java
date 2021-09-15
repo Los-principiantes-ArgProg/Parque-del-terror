@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.util.Arrays;
 
 public class Cajero {
+	
 	private static Usuario[] usuarios;
 
 	public void creadorUsuarios(Usuario[] visitantes) {
@@ -11,7 +12,7 @@ public class Cajero {
 		usuarios = Arrays.copyOf(visitantes, visitantes.length);
 
 	}
-
+	
 	private static void recorredorUsuarios(Usuario[] usuarios) throws IOException {
 
 		int c;
@@ -27,9 +28,9 @@ public class Cajero {
 		Oferta.creadorPaseos(Archivo.obtenerAtraccionesDesdeArchivo());
 
 		Oferta.creadorPromociones(Archivo.obtenerPromocionesDesdeArchivo());
-
+		
 		recorredorUsuarios(Archivo.obtenerUsuariosDesdeArchivo());
 
 	}
-
+	
 }

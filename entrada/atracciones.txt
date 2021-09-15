@@ -1,13 +1,13 @@
 12
-Bosque Encantado,50,240,25,PASEO
-Lago del Terror,40,120,10,PASEO
-Castillo de Drácula,25,75,10,ADRENALINA
+Bosque Encantado,50,80,25,PASEO
+Lago del Terror,40,50,10,PASEO
+Castillo de Drácula,25,40,10,ADRENALINA
 La Posada de Hades,50,60,50,DEGUSTACION
-Nido de Dragones,35,100,2,ADRENALINA
-Laberinto,50,20,4,ADRENALINA
-Canibalismo y cervezas,28,60,20,DEGUSTACION
-Mansión embrujada,20,4,5,SIMULACION
-Maldición de DarKastle,20,4,5,SIMULACION
-Tren Fantasma,20,4,7,PASEO
-Sangre y dolor,20,4,10,DEGUSTACION
-Invisibles,20,4,6,SIMULACION
+Nido de Dragones,35,30,5,ADRENALINA
+Laberinto,35,20,4,ADRENALINA
+Canibalismo y cervezas,40,65,20,DEGUSTACION
+Mansión embrujada,55,50,10,SIMULACION
+Maldición de DarKastle,20,30,15,SIMULACION
+Tren Fantasma,30,35,35,PASEO
+Sangre y dolor,35,50,25,DEGUSTACION
+Invisibles,25,25,20,SIMULACION

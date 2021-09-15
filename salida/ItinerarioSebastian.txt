@@ -1,0 +1,8 @@
+---------------------------ITINERARIO---------------------------
+Estado inicial: Usuario: Sebastian | Presupuesto: 200| Tiempo Disponible = 200 minutos | Preferencia: DEGUSTACION
+
+Muchas gracias por su compra Sebastian
+El costo total es de 0 monedas.
+El tiempo necesario para su itinerario es 0 horas y 0 minutos.
+Estado final: Usuario: Sebastian | Presupuesto: 200| Tiempo Disponible = 200 minutos | Preferencia: DEGUSTACION
+
