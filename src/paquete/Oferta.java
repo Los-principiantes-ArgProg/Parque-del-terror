@@ -109,6 +109,8 @@ public class Oferta {
 										visitante.getPresupuesto() - promociones[contador].calculoPromocion());
 								visitante.setTiempoDisponible(
 										visitante.getTiempoDisponible() - promociones[contador].getTiempoPromedio());
+								
+								System.out.println("<Monedas disponibles: " + visitante.getPresupuesto() + "\tTiempo disponible: " + visitante.getTiempoDisponible() + ">\n");
 
 							}
 						}
@@ -135,6 +137,7 @@ public class Oferta {
 									visitante.getPresupuesto() - listaAtraccionesPreferidas.get(i).getCostoVisita());
 							visitante.setTiempoDisponible(visitante.getTiempoDisponible()
 									- listaAtraccionesPreferidas.get(i).getTiempoPromedio());
+							System.out.println("<Monedas disponibles: " + visitante.getPresupuesto() + "\tTiempo disponible: " + visitante.getTiempoDisponible() + ">\n");
 
 						}
 					}
@@ -184,6 +187,7 @@ public class Oferta {
 										visitante.getPresupuesto() - promociones[contador].calculoPromocion());
 								visitante.setTiempoDisponible(
 										visitante.getTiempoDisponible() - promociones[contador].getTiempoPromedio());
+								System.out.println("<Monedas disponibles: " + visitante.getPresupuesto() + "\tTiempo disponible: " + visitante.getTiempoDisponible() + ">\n");
 
 							}
 						}
@@ -210,6 +214,7 @@ public class Oferta {
 									visitante.getPresupuesto() - listaAtraccionesNOPreferidas.get(w).getCostoVisita());
 							visitante.setTiempoDisponible(visitante.getTiempoDisponible()
 									- listaAtraccionesNOPreferidas.get(w).getTiempoPromedio());
+							System.out.println("<Monedas disponibles: " + visitante.getPresupuesto() + "\tTiempo disponible: " + visitante.getTiempoDisponible() + ">\n");
 						}
 
 					}

@@ -1,17 +1,21 @@
-package paquete;
+package main;
 
 import java.io.IOException;
 import java.util.Arrays;
 
+import paquete.Archivo;
+import paquete.Oferta;
+import paquete.Usuario;
+
 public class Cajero {
 	
-	private static Usuario[] usuarios;
+	/*private static Usuario[] usuarios;
 
 	public void creadorUsuarios(Usuario[] visitantes) {
 
 		usuarios = Arrays.copyOf(visitantes, visitantes.length);
 
-	}
+	}*/
 	
 	private static void recorredorUsuarios(Usuario[] usuarios) throws IOException {
 

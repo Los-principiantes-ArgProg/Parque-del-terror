@@ -48,7 +48,8 @@ public class Itinerario {
 
 		salida.println("El costo total es de " + costoTotal + " monedas.\n");
 		salida.println("El tiempo necesario para su itinerario es " + horas + " horas y " + minutos + " minutos.\n");
-		salida.println("Estado final\n" + usuario.toString());
+		salida.println("Estado final\n" + usuario.toString() + "\n");
+		salida.println("Disfrute de su paseo.");
 		salida.println("----------------------------------------------------------------------------\n");
 		salida.close();
 
