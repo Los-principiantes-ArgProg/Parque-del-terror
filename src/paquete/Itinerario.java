@@ -14,9 +14,9 @@ public class Itinerario {
 
 		PrintWriter salida = new PrintWriter(new FileWriter("salida/Itinerario" + usuario.getNombre() + ".txt"));
 
-		salida.println("---------------------------ITINERARIO---------------------------\n");
+		salida.println("-------------------------------- ITINERARIO --------------------------------\n");
 		salida.println("Estado inicial\n" + datosUsuarioInicial);
-		salida.println("Muchas gracias por su compra " + usuario.getNombre() + ".\n");
+		salida.println("¡Muchas gracias por su compra " + usuario.getNombre() + "!\n");
 
 		int costoTotal = 0;
 		int tiempoTotal = 0;
@@ -49,7 +49,7 @@ public class Itinerario {
 		salida.println("El costo total es de " + costoTotal + " monedas.\n");
 		salida.println("El tiempo necesario para su itinerario es " + horas + " horas y " + minutos + " minutos.\n");
 		salida.println("Estado final\n" + usuario.toString());
-		salida.println("----------------------------------------------------------------\n");
+		salida.println("----------------------------------------------------------------------------\n");
 		salida.close();
 
 		imprimirItinerario("salida/Itinerario" + usuario.getNombre() + ".txt");

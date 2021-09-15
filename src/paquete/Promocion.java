@@ -45,7 +45,7 @@ public abstract class Promocion {
 			}
 		}
 		return "Promocion: " + nombre + ", de tipo: " + tipo + ", atracciones: " + nombreAtracciones
-				+ ", tiempo promedio: " + getTiempoPromedio() + ", que cuesta " + calculoPromocion() + "\n";
+				+ "\n\t\ttiempo promedio: " + getTiempoPromedio() + "minutos, costo: " + calculoPromocion() + " monedas.\n";
 	}
 
 	public String getNombre() {

@@ -46,9 +46,13 @@ public class Oferta {
 
 		contador = 0;
 		x = 0;
-		
-		//BIENVENIDA
-		
+
+		// BIENVENIDA
+		System.out.println("---------------------- BIENVENIDO AL PARQUE DEL TERROR ---------------------\n");
+		System.out.println(datosUsuarioInicial);
+		System.out.println("Hola " + visitante.getNombre());
+		System.out.println("¿Comenzamos?\nEstas son tus sugerencias:\n");
+
 		for (int i = 0; i < paseos.length; i++) {
 			listaAtraccion.add(paseos[i]);
 		}
@@ -226,12 +230,12 @@ public class Oferta {
 
 		char entradaUs = ' ';
 
-		System.out.println("Quiere comprar el pase a la atraccion " + paseo.getNombre() + "? ");
-		System.out.println("La cual cuesta " + paseo.getCostoVisita() + ", y dura " + paseo.getTiempoPromedio() + "?");
+		System.out.println("¿Quiere comprar el pase a la atracción " + paseo.getNombre() + "? ");
+		System.out.println("Costo: " + paseo.getCostoVisita() + " monedas.\tDuración: " + paseo.getTiempoPromedio() + " minutos.\n");
 
 		while (!(entradaUs == 's' || entradaUs == 'n')) {
 			System.out.println(
-					"Ingrese la letra 's' si quiere realizar la atraccion, de lo contrario ingrese la letra 'n'");
+					"Ingrese la letra 's' si quiere comprar la atracción, de lo contrario ingrese la letra 'n'");
 
 			entradaUs = entradaCar();
 
@@ -261,18 +265,18 @@ public class Oferta {
 
 		char entradaUsuario = ' ';
 
-		System.out.println("Quiere comprar el pase a la promocion: " + promociones.getNombre() + "? ");
-		System.out.println("La cual incluye las siguientes atracciones:");
+		System.out.println("¿Quiere comprar el pase a la promoción: " + promociones.getNombre() + "? ");
+		System.out.println("Incluye las siguientes atracciones:");
 		for (int i = 0; i < promociones.getAtraccion().length; i++) {
-			System.out.println("Atraccion N°" + (i + 1) + ": " + promociones.getAtraccion()[i].getNombre());
+			System.out.println("\tAtraccion N°" + (i + 1) + ": " + promociones.getAtraccion()[i].getNombre());
 		}
-		System.out.println("La cual cuesta " + promociones.calculoPromocion() + ", y dura "
-				+ promociones.getTiempoPromedio() + "?");
+		System.out.println("Costo: " + promociones.calculoPromocion() + " monedas.\tDuración "
+				+ promociones.getTiempoPromedio() + " minutos.");
 
 		System.out.println("");
 		while (!(entradaUsuario == 's' || entradaUsuario == 'n')) {
 			System.out.println(
-					"Ingrese la letra 's' si quiere comprar la promocion, de lo contrario ingrese la letra 'n'");
+					"Ingrese la letra 's' si quiere comprar la promoción, de lo contrario ingrese la letra 'n'");
 			entradaUsuario = entradaCar();
 
 		}
