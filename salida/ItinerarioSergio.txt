@@ -1,24 +1,24 @@
 -------------------------------- ITINERARIO --------------------------------
 
 Estado inicial
-Usuario: Sergio | Presupuesto: 150 monedas | Tiempo Disponible = 300 minutos | Preferencia: ADRENALINA
+Usuario: Sergio | Presupuesto: 200 monedas | Tiempo Disponible = 500 minutos | Preferencia: ADRENALINA
 
 ¡Muchas gracias por su compra Sergio!
 
 Adquirió las siguientes promociones: 
 
 	Promocion: Pack Adrenalina, de tipo: ADRENALINA, atracciones: Castillo de Drácula, Nido de Dragones, Laberinto.
-		tiempo promedio: 90minutos, costo: 70 monedas.
+		tiempo promedio: 120minutos, costo: 90 monedas.
 
-	Promocion: Pack Realidad Virtual, de tipo: SIMULACION, atracciones: Mansión embrujada, Maldición de DarKastle, Invisibles.
-		tiempo promedio: 105minutos, costo: 75 monedas.
+	Promocion: Pack Degustacion, de tipo: DEGUSTACION, atracciones: La Posada de Hades, Canibalismo y cervezas.
+		tiempo promedio: 155minutos, costo: 95 monedas.
 
-El costo total es de 145 monedas.
+El costo total es de 185 monedas.
 
-El tiempo necesario para su itinerario es 3 horas y 15 minutos.
+El tiempo necesario para su itinerario es 4 horas y 35 minutos.
 
 Estado final
-Usuario: Sergio | Presupuesto: 5 monedas | Tiempo Disponible = 105 minutos | Preferencia: ADRENALINA
+Usuario: Sergio | Presupuesto: 15 monedas | Tiempo Disponible = 225 minutos | Preferencia: ADRENALINA
 
 
 Disfrute de su paseo.

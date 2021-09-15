@@ -15,9 +15,9 @@ public class PromocionPorcentual extends Promocion {
 			devolucionCalculo += atracciones[c].getCostoVisita();
 		}
 		// aplicar el cambio para el descuento
-		double calculoDescuento = (devolucionCalculo / 100) * descuento;
+		int calculoDescuento = (devolucionCalculo * descuento) / 100;
 
-		return (int) (devolucionCalculo - calculoDescuento);
+		return devolucionCalculo - calculoDescuento;
 
 	}
 

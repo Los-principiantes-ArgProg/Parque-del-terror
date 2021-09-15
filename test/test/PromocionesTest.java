@@ -39,14 +39,14 @@ public class PromocionesTest {
 	}
 
 	@Test
-	public void PromosionPorcentualTest() {
+	public void PromocionPorcentualTest() {
 		Atraccion atracciones[] = { new Atraccion("La Posada de Hades", 45, 80, 15, TipoAtraccion.DEGUSTACION),
 				new Atraccion("Canibalismo y cervezas", 70, 75, 40, TipoAtraccion.DEGUSTACION) };
 		PromocionPorcentual promocion = new PromocionPorcentual("Pack Degustacion", TipoAtraccion.DEGUSTACION,
 				atracciones, 20);
 		int costoEsperado = 92;
 		int tiempoEsperado = 155;
-		assertEquals(costoEsperado, promocion.calculoPromocion(), 0.001);
+		assertEquals(costoEsperado, promocion.calculoPromocion(), 0);
 		assertEquals(tiempoEsperado, promocion.getTiempoPromedio());
 
 	}
