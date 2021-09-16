@@ -1,15 +1,27 @@
-Usuario: Mauricio | Presupuesto: 220| Tiempo Disponible = 150 minutos | Preferencia: DEGUSTACION
+-------------------------------- ITINERARIO --------------------------------
 
-Muchas gracias por su compra Mauricio
+Estado inicial
+Usuario: Mauricio | Presupuesto: 120 monedas | Tiempo Disponible = 400 minutos | Preferencia: DEGUSTACION
+
+¡Muchas gracias por su compra Mauricio!
+
 Adquirió las siguientes atracciones: 
-Atraccion [nombre = Laberinto, tipo de atraccion = ADRENALINA, costo de visita = 35, tiempo promedio = 20]
+
+	Atraccion: Invisibles, tipo de atraccion: SIMULACION, costo: 25 monedas, tiempo promedio: 60 minutos.
 
 Adquirió las siguientes promociones: 
-Promocion: Pack Degustacion, que es de tipo: DEGUSTACION, con las atracciones: = [Atraccion [nombre = La Posada de Hades, tipo de atraccion = DEGUSTACION, costo de visita = 50, tiempo promedio = 60]
-, Atraccion [nombre = Canibalismo y cervezas, tipo de atraccion = DEGUSTACION, costo de visita = 40, tiempo promedio = 65]
-]
 
-El costo total es de 125 monedas.
-El tiempo necesario para su itinerario es 2 horas y 25 minutos.
-Su estado final es: Usuario: Mauricio | Presupuesto: 95| Tiempo Disponible = 5 minutos | Preferencia: DEGUSTACION
+	Promocion: Pack Degustacion, de tipo: DEGUSTACION, atracciones: La Posada de Hades, Canibalismo y cervezas.
+		tiempo promedio: 155minutos, costo: 92 monedas.
+
+El costo total es de 117 monedas.
+
+El tiempo necesario para su itinerario es 3 horas y 35 minutos.
+
+Estado final
+Usuario: Mauricio | Presupuesto: 3 monedas | Tiempo Disponible = 185 minutos | Preferencia: DEGUSTACION
+
+
+Disfrute de su paseo.
+----------------------------------------------------------------------------
 

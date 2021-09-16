@@ -1,24 +1,26 @@
-Usuario: Zacarias | Presupuesto: 300| Tiempo Disponible = 400 minutos | Preferencia: PASEO
+-------------------------------- ITINERARIO --------------------------------
 
-Muchas gracias por su compra Zacarias
-Adquirió las siguientes atracciones: 
-Atraccion [nombre = Mansión embrujada, tipo de atraccion = SIMULACION, costo de visita = 55, tiempo promedio = 40]
+Estado inicial
+Usuario: Zacarias | Presupuesto: 200 monedas | Tiempo Disponible = 500 minutos | Preferencia: PASEO
 
-Atraccion [nombre = La Posada de Hades, tipo de atraccion = DEGUSTACION, costo de visita = 50, tiempo promedio = 60]
-
-Atraccion [nombre = Canibalismo y cervezas, tipo de atraccion = DEGUSTACION, costo de visita = 40, tiempo promedio = 65]
-
-Atraccion [nombre = Nido de Dragones, tipo de atraccion = ADRENALINA, costo de visita = 35, tiempo promedio = 30]
-
-Atraccion [nombre = Castillo de Drácula, tipo de atraccion = ADRENALINA, costo de visita = 25, tiempo promedio = 40]
+¡Muchas gracias por su compra Zacarias!
 
 Adquirió las siguientes promociones: 
-Promocion: Pack Paseo, que es de tipo: PASEO, con las atracciones: = [Atraccion [nombre = Bosque Encantado, tipo de atraccion = PASEO, costo de visita = 50, tiempo promedio = 80]
-, Atraccion [nombre = Lago del Terror, tipo de atraccion = PASEO, costo de visita = 40, tiempo promedio = 50]
-, Atraccion [nombre = Tren Fantasma, tipo de atraccion = PASEO, costo de visita = 30, tiempo promedio = 35]
-]
 
-El costo total es de 295 monedas.
-El tiempo necesario para su itinerario es 6 horas y 40 minutos.
-Su estado final es: Usuario: Zacarias | Presupuesto: 5| Tiempo Disponible = 0 minutos | Preferencia: PASEO
+	Promocion: Pack Paseo, de tipo: PASEO, atracciones: Bosque Encantado, Lago del Terror, Tren Fantasma.
+		tiempo promedio: 210minutos, costo: 110 monedas.
+
+	Promocion: Pack Adrenalina, de tipo: ADRENALINA, atracciones: Castillo de Drácula, Nido de Dragones, Laberinto.
+		tiempo promedio: 120minutos, costo: 90 monedas.
+
+El costo total es de 200 monedas.
+
+El tiempo necesario para su itinerario es 5 horas y 30 minutos.
+
+Estado final
+Usuario: Zacarias | Presupuesto: 0 monedas | Tiempo Disponible = 170 minutos | Preferencia: PASEO
+
+
+Disfrute de su paseo.
+----------------------------------------------------------------------------
 

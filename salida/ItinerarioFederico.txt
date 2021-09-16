@@ -1,0 +1,27 @@
+-------------------------------- ITINERARIO --------------------------------
+
+Estado inicial
+Usuario: Federico | Presupuesto: 500 monedas | Tiempo Disponible = 230 minutos | Preferencia: PASEO
+
+¡Muchas gracias por su compra Federico!
+
+Adquirió las siguientes atracciones: 
+
+	Atraccion: Mansión embrujada, tipo de atraccion: SIMULACION, costo: 80 monedas, tiempo promedio: 20 minutos.
+
+Adquirió las siguientes promociones: 
+
+	Promocion: Pack Paseo, de tipo: PASEO, atracciones: Bosque Encantado, Lago del Terror, Tren Fantasma.
+		tiempo promedio: 210minutos, costo: 110 monedas.
+
+El costo total es de 190 monedas.
+
+El tiempo necesario para su itinerario es 3 horas y 50 minutos.
+
+Estado final
+Usuario: Federico | Presupuesto: 310 monedas | Tiempo Disponible = 0 minutos | Preferencia: PASEO
+
+
+Disfrute de su paseo.
+----------------------------------------------------------------------------
+

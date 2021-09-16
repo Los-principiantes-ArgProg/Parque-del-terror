@@ -41,7 +41,6 @@ public class Itinerario {
 				tiempoTotal += promocionesCompradas.get(i).getTiempoPromedio();
 			}
 		}
-		// Modificar el pasaje a horas
 
 		int horas = tiempoTotal / 60;
 		int minutos = tiempoTotal % 60;

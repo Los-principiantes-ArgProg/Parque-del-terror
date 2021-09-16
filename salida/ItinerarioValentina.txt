@@ -1,21 +1,33 @@
 -------------------------------- ITINERARIO --------------------------------
 
 Estado inicial
-Usuario: Valentina | Presupuesto: 100 monedas | Tiempo Disponible = 250 minutos | Preferencia: PASEO
+Usuario: Valentina | Presupuesto: 400 monedas | Tiempo Disponible = 600 minutos | Preferencia: PASEO
 
 ¡Muchas gracias por su compra Valentina!
+
+Adquirió las siguientes atracciones: 
+
+	Atraccion: Laberinto, tipo de atraccion: ADRENALINA, costo: 50 monedas, tiempo promedio: 30 minutos.
 
 Adquirió las siguientes promociones: 
 
 	Promocion: Pack Paseo, de tipo: PASEO, atracciones: Bosque Encantado, Lago del Terror, Tren Fantasma.
-		tiempo promedio: 165minutos, costo: 90 monedas.
+		tiempo promedio: 210minutos, costo: 110 monedas.
 
-El costo total es de 90 monedas.
+	Promocion: Pack Realidad Virtual, de tipo: SIMULACION, atracciones: Mansión embrujada, Maldición de DarKastle, Invisibles.
+		tiempo promedio: 95minutos, costo: 140 monedas.
 
-El tiempo necesario para su itinerario es 2 horas y 45 minutos.
+	Promocion: Pack Degustacion, de tipo: DEGUSTACION, atracciones: La Posada de Hades, Canibalismo y cervezas.
+		tiempo promedio: 155minutos, costo: 92 monedas.
+
+El costo total es de 392 monedas.
+
+El tiempo necesario para su itinerario es 8 horas y 10 minutos.
 
 Estado final
-Usuario: Valentina | Presupuesto: 10 monedas | Tiempo Disponible = 85 minutos | Preferencia: PASEO
+Usuario: Valentina | Presupuesto: 8 monedas | Tiempo Disponible = 110 minutos | Preferencia: PASEO
 
+
+Disfrute de su paseo.
 ----------------------------------------------------------------------------
 

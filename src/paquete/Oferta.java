@@ -52,7 +52,7 @@ public class Oferta {
 		System.out.println(datosUsuarioInicial);
 		System.out.println("Hola " + visitante.getNombre());
 		System.out.println("¿Comenzamos?\nEstas son tus sugerencias:\n");
-
+		listaAtraccion.clear();
 		for (int i = 0; i < paseos.length; i++) {
 			listaAtraccion.add(paseos[i]);
 		}
@@ -110,7 +110,7 @@ public class Oferta {
 								visitante.setTiempoDisponible(
 										visitante.getTiempoDisponible() - promociones[contador].getTiempoPromedio());
 								
-								System.out.println("<Monedas disponibles: " + visitante.getPresupuesto() + "\tTiempo disponible: " + visitante.getTiempoDisponible() + ">\n");
+								System.out.println("<Monedas disponibles: " + visitante.getPresupuesto() + "\tTiempo disponible: " + visitante.getTiempoDisponible() + " minutos>\n");
 
 							}
 						}
@@ -137,7 +137,7 @@ public class Oferta {
 									visitante.getPresupuesto() - listaAtraccionesPreferidas.get(i).getCostoVisita());
 							visitante.setTiempoDisponible(visitante.getTiempoDisponible()
 									- listaAtraccionesPreferidas.get(i).getTiempoPromedio());
-							System.out.println("<Monedas disponibles: " + visitante.getPresupuesto() + "\tTiempo disponible: " + visitante.getTiempoDisponible() + ">\n");
+							System.out.println("<Monedas disponibles: " + visitante.getPresupuesto() + "\tTiempo disponible: " + visitante.getTiempoDisponible() + " minutos>\n");
 
 						}
 					}
@@ -187,7 +187,7 @@ public class Oferta {
 										visitante.getPresupuesto() - promociones[contador].calculoPromocion());
 								visitante.setTiempoDisponible(
 										visitante.getTiempoDisponible() - promociones[contador].getTiempoPromedio());
-								System.out.println("<Monedas disponibles: " + visitante.getPresupuesto() + "\tTiempo disponible: " + visitante.getTiempoDisponible() + ">\n");
+								System.out.println("<Monedas disponibles: " + visitante.getPresupuesto() + "\tTiempo disponible: " + visitante.getTiempoDisponible() + " minutos>\n");
 
 							}
 						}
@@ -214,7 +214,7 @@ public class Oferta {
 									visitante.getPresupuesto() - listaAtraccionesNOPreferidas.get(w).getCostoVisita());
 							visitante.setTiempoDisponible(visitante.getTiempoDisponible()
 									- listaAtraccionesNOPreferidas.get(w).getTiempoPromedio());
-							System.out.println("<Monedas disponibles: " + visitante.getPresupuesto() + "\tTiempo disponible: " + visitante.getTiempoDisponible() + ">\n");
+							System.out.println("<Monedas disponibles: " + visitante.getPresupuesto() + "\tTiempo disponible: " + visitante.getTiempoDisponible() + " minutos>\n");
 						}
 
 					}

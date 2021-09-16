@@ -1,0 +1,26 @@
+-------------------------------- ITINERARIO --------------------------------
+
+Estado inicial
+Usuario: Leo | Presupuesto: 250 monedas | Tiempo Disponible = 100 minutos | Preferencia: ADRENALINA
+
+¡Muchas gracias por su compra Leo!
+
+Adquirió las siguientes atracciones: 
+
+	Atraccion: Laberinto, tipo de atraccion: ADRENALINA, costo: 50 monedas, tiempo promedio: 30 minutos.
+
+	Atraccion: Nido de Dragones, tipo de atraccion: ADRENALINA, costo: 35 monedas, tiempo promedio: 40 minutos.
+
+	Atraccion: Mansión embrujada, tipo de atraccion: SIMULACION, costo: 80 monedas, tiempo promedio: 20 minutos.
+
+El costo total es de 165 monedas.
+
+El tiempo necesario para su itinerario es 1 horas y 30 minutos.
+
+Estado final
+Usuario: Leo | Presupuesto: 85 monedas | Tiempo Disponible = 10 minutos | Preferencia: ADRENALINA
+
+
+Disfrute de su paseo.
+----------------------------------------------------------------------------
+

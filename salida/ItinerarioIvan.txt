@@ -1,22 +1,23 @@
-Usuario: Ivan | Presupuesto: 250| Tiempo Disponible = 450 minutos | Preferencia: ADRENALINA
+-------------------------------- ITINERARIO --------------------------------
 
-Muchas gracias por su compra Ivan
-Adquirió las siguientes atracciones: 
-Atraccion [nombre = Mansión embrujada, tipo de atraccion = SIMULACION, costo de visita = 55, tiempo promedio = 40]
+Estado inicial
+Usuario: Ivan | Presupuesto: 100 monedas | Tiempo Disponible = 300 minutos | Preferencia: ADRENALINA
 
-Atraccion [nombre = Bosque Encantado, tipo de atraccion = PASEO, costo de visita = 50, tiempo promedio = 80]
-
-Atraccion [nombre = La Posada de Hades, tipo de atraccion = DEGUSTACION, costo de visita = 50, tiempo promedio = 60]
-
-Atraccion [nombre = Invisibles, tipo de atraccion = SIMULACION, costo de visita = 25, tiempo promedio = 25]
+¡Muchas gracias por su compra Ivan!
 
 Adquirió las siguientes promociones: 
-Promocion: Pack Adrenalina, que es de tipo: ADRENALINA, con las atracciones: = [Atraccion [nombre = Castillo de Drácula, tipo de atraccion = ADRENALINA, costo de visita = 25, tiempo promedio = 40]
-, Atraccion [nombre = Nido de Dragones, tipo de atraccion = ADRENALINA, costo de visita = 35, tiempo promedio = 30]
-, Atraccion [nombre = Laberinto, tipo de atraccion = ADRENALINA, costo de visita = 35, tiempo promedio = 20]
-]
 
-El costo total es de 250 monedas.
-El tiempo necesario para su itinerario es 4 horas y 55 minutos.
-Su estado final es: Usuario: Ivan | Presupuesto: 0| Tiempo Disponible = 155 minutos | Preferencia: ADRENALINA
+	Promocion: Pack Adrenalina, de tipo: ADRENALINA, atracciones: Castillo de Drácula, Nido de Dragones, Laberinto.
+		tiempo promedio: 120minutos, costo: 90 monedas.
+
+El costo total es de 90 monedas.
+
+El tiempo necesario para su itinerario es 2 horas y 0 minutos.
+
+Estado final
+Usuario: Ivan | Presupuesto: 10 monedas | Tiempo Disponible = 180 minutos | Preferencia: ADRENALINA
+
+
+Disfrute de su paseo.
+----------------------------------------------------------------------------
 
