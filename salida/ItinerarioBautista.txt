@@ -1,0 +1,23 @@
+-------------------------------- ITINERARIO --------------------------------
+
+Estado inicial
+Usuario: Bautista | Presupuesto: 150 monedas | Tiempo Disponible = 150 minutos | Preferencia: SIMULACION
+
+¡Muchas gracias por su compra Bautista!
+
+Adquirió las siguientes promociones: 
+
+	Promocion: Pack Realidad Virtual, de tipo: SIMULACION, atracciones: Mansión embrujada, Maldición de DarKastle, Invisibles.
+		tiempo promedio: 95minutos, costo: 140 monedas.
+
+El costo total es de 140 monedas.
+
+El tiempo necesario para su itinerario es 1 horas y 35 minutos.
+
+Estado final
+Usuario: Bautista | Presupuesto: 10 monedas | Tiempo Disponible = 55 minutos | Preferencia: SIMULACION
+
+
+Disfrute de su paseo.
+----------------------------------------------------------------------------
+

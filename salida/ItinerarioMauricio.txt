@@ -1,0 +1,27 @@
+-------------------------------- ITINERARIO --------------------------------
+
+Estado inicial
+Usuario: Mauricio | Presupuesto: 120 monedas | Tiempo Disponible = 400 minutos | Preferencia: DEGUSTACION
+
+¡Muchas gracias por su compra Mauricio!
+
+Adquirió las siguientes atracciones: 
+
+	Atraccion: Invisibles, tipo de atraccion: SIMULACION, costo: 25 monedas, tiempo promedio: 60 minutos.
+
+Adquirió las siguientes promociones: 
+
+	Promocion: Pack Degustacion, de tipo: DEGUSTACION, atracciones: La Posada de Hades, Canibalismo y cervezas.
+		tiempo promedio: 155minutos, costo: 92 monedas.
+
+El costo total es de 117 monedas.
+
+El tiempo necesario para su itinerario es 3 horas y 35 minutos.
+
+Estado final
+Usuario: Mauricio | Presupuesto: 3 monedas | Tiempo Disponible = 185 minutos | Preferencia: DEGUSTACION
+
+
+Disfrute de su paseo.
+----------------------------------------------------------------------------
+

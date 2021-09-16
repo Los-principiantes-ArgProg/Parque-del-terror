@@ -1,0 +1,30 @@
+-------------------------------- ITINERARIO --------------------------------
+
+Estado inicial
+Usuario: Lucas | Presupuesto: 660 monedas | Tiempo Disponible = 300 minutos | Preferencia: SIMULACION
+
+¡Muchas gracias por su compra Lucas!
+
+Adquirió las siguientes atracciones: 
+
+	Atraccion: Lago del Terror, tipo de atraccion: PASEO, costo: 50 monedas, tiempo promedio: 50 minutos.
+
+Adquirió las siguientes promociones: 
+
+	Promocion: Pack Realidad Virtual, de tipo: SIMULACION, atracciones: Mansión embrujada, Maldición de DarKastle, Invisibles.
+		tiempo promedio: 95minutos, costo: 140 monedas.
+
+	Promocion: Pack Degustacion, de tipo: DEGUSTACION, atracciones: La Posada de Hades, Canibalismo y cervezas.
+		tiempo promedio: 155minutos, costo: 92 monedas.
+
+El costo total es de 282 monedas.
+
+El tiempo necesario para su itinerario es 5 horas y 0 minutos.
+
+Estado final
+Usuario: Lucas | Presupuesto: 378 monedas | Tiempo Disponible = 0 minutos | Preferencia: SIMULACION
+
+
+Disfrute de su paseo.
+----------------------------------------------------------------------------
+

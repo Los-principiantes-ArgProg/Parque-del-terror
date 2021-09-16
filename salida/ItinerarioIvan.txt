@@ -1,0 +1,23 @@
+-------------------------------- ITINERARIO --------------------------------
+
+Estado inicial
+Usuario: Ivan | Presupuesto: 100 monedas | Tiempo Disponible = 300 minutos | Preferencia: ADRENALINA
+
+¡Muchas gracias por su compra Ivan!
+
+Adquirió las siguientes promociones: 
+
+	Promocion: Pack Adrenalina, de tipo: ADRENALINA, atracciones: Castillo de Drácula, Nido de Dragones, Laberinto.
+		tiempo promedio: 120minutos, costo: 90 monedas.
+
+El costo total es de 90 monedas.
+
+El tiempo necesario para su itinerario es 2 horas y 0 minutos.
+
+Estado final
+Usuario: Ivan | Presupuesto: 10 monedas | Tiempo Disponible = 180 minutos | Preferencia: ADRENALINA
+
+
+Disfrute de su paseo.
+----------------------------------------------------------------------------
+

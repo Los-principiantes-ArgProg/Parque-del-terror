@@ -1,0 +1,29 @@
+-------------------------------- ITINERARIO --------------------------------
+
+Estado inicial
+Usuario: Florencia | Presupuesto: 600 monedas | Tiempo Disponible = 210 minutos | Preferencia: DEGUSTACION
+
+¡Muchas gracias por su compra Florencia!
+
+Adquirió las siguientes atracciones: 
+
+	Atraccion: Mansión embrujada, tipo de atraccion: SIMULACION, costo: 80 monedas, tiempo promedio: 20 minutos.
+
+	Atraccion: Maldición de DarKastle, tipo de atraccion: SIMULACION, costo: 65 monedas, tiempo promedio: 15 minutos.
+
+Adquirió las siguientes promociones: 
+
+	Promocion: Pack Degustacion, de tipo: DEGUSTACION, atracciones: La Posada de Hades, Canibalismo y cervezas.
+		tiempo promedio: 155minutos, costo: 92 monedas.
+
+El costo total es de 237 monedas.
+
+El tiempo necesario para su itinerario es 3 horas y 10 minutos.
+
+Estado final
+Usuario: Florencia | Presupuesto: 363 monedas | Tiempo Disponible = 20 minutos | Preferencia: DEGUSTACION
+
+
+Disfrute de su paseo.
+----------------------------------------------------------------------------
+

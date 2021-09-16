@@ -1,0 +1,13 @@
+12
+Castillo de Drácula,25,50,100,ADRENALINA
+Nido de Dragones,35,40,12,ADRENALINA
+Laberinto,50,30,30,ADRENALINA
+Bosque Encantado,60,70,12,PASEO
+Lago del Terror,50,50,40,PASEO
+Tren Fantasma,50,90,10,PASEO
+La Posada de Hades,45,80,15,DEGUSTACION
+Sangre y dolor,60,65,30,DEGUSTACION
+Canibalismo y cervezas,70,75,40,DEGUSTACION
+Mansión embrujada,80,20,8,SIMULACION
+Maldición de DarKastle,65,15,10,SIMULACION
+Invisibles,25,60,5,SIMULACION

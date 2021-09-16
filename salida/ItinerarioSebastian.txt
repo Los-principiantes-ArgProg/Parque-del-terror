@@ -1,0 +1,35 @@
+-------------------------------- ITINERARIO --------------------------------
+
+Estado inicial
+Usuario: Sebastian | Presupuesto: 460 monedas | Tiempo Disponible = 520 minutos | Preferencia: DEGUSTACION
+
+¡Muchas gracias por su compra Sebastian!
+
+Adquirió las siguientes atracciones: 
+
+	Atraccion: Sangre y dolor, tipo de atraccion: DEGUSTACION, costo: 60 monedas, tiempo promedio: 65 minutos.
+
+	Atraccion: Bosque Encantado, tipo de atraccion: PASEO, costo: 60 monedas, tiempo promedio: 70 minutos.
+
+Adquirió las siguientes promociones: 
+
+	Promocion: Pack Degustacion, de tipo: DEGUSTACION, atracciones: La Posada de Hades, Canibalismo y cervezas.
+		tiempo promedio: 155minutos, costo: 92 monedas.
+
+	Promocion: Pack Realidad Virtual, de tipo: SIMULACION, atracciones: Mansión embrujada, Maldición de DarKastle, Invisibles.
+		tiempo promedio: 95minutos, costo: 140 monedas.
+
+	Promocion: Pack Adrenalina, de tipo: ADRENALINA, atracciones: Castillo de Drácula, Nido de Dragones, Laberinto.
+		tiempo promedio: 120minutos, costo: 90 monedas.
+
+El costo total es de 442 monedas.
+
+El tiempo necesario para su itinerario es 8 horas y 25 minutos.
+
+Estado final
+Usuario: Sebastian | Presupuesto: 18 monedas | Tiempo Disponible = 15 minutos | Preferencia: DEGUSTACION
+
+
+Disfrute de su paseo.
+----------------------------------------------------------------------------
+

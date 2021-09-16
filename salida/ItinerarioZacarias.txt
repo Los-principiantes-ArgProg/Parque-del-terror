@@ -1,0 +1,26 @@
+-------------------------------- ITINERARIO --------------------------------
+
+Estado inicial
+Usuario: Zacarias | Presupuesto: 200 monedas | Tiempo Disponible = 500 minutos | Preferencia: PASEO
+
+¡Muchas gracias por su compra Zacarias!
+
+Adquirió las siguientes promociones: 
+
+	Promocion: Pack Paseo, de tipo: PASEO, atracciones: Bosque Encantado, Lago del Terror, Tren Fantasma.
+		tiempo promedio: 210minutos, costo: 110 monedas.
+
+	Promocion: Pack Adrenalina, de tipo: ADRENALINA, atracciones: Castillo de Drácula, Nido de Dragones, Laberinto.
+		tiempo promedio: 120minutos, costo: 90 monedas.
+
+El costo total es de 200 monedas.
+
+El tiempo necesario para su itinerario es 5 horas y 30 minutos.
+
+Estado final
+Usuario: Zacarias | Presupuesto: 0 monedas | Tiempo Disponible = 170 minutos | Preferencia: PASEO
+
+
+Disfrute de su paseo.
+----------------------------------------------------------------------------
+

@@ -1,0 +1,29 @@
+-------------------------------- ITINERARIO --------------------------------
+
+Estado inicial
+Usuario: Soledad | Presupuesto: 350 monedas | Tiempo Disponible = 490 minutos | Preferencia: SIMULACION
+
+¡Muchas gracias por su compra Soledad!
+
+Adquirió las siguientes promociones: 
+
+	Promocion: Pack Realidad Virtual, de tipo: SIMULACION, atracciones: Mansión embrujada, Maldición de DarKastle, Invisibles.
+		tiempo promedio: 95minutos, costo: 140 monedas.
+
+	Promocion: Pack Paseo, de tipo: PASEO, atracciones: Bosque Encantado, Lago del Terror, Tren Fantasma.
+		tiempo promedio: 210minutos, costo: 110 monedas.
+
+	Promocion: Pack Degustacion, de tipo: DEGUSTACION, atracciones: La Posada de Hades, Canibalismo y cervezas.
+		tiempo promedio: 155minutos, costo: 92 monedas.
+
+El costo total es de 342 monedas.
+
+El tiempo necesario para su itinerario es 7 horas y 40 minutos.
+
+Estado final
+Usuario: Soledad | Presupuesto: 8 monedas | Tiempo Disponible = 30 minutos | Preferencia: SIMULACION
+
+
+Disfrute de su paseo.
+----------------------------------------------------------------------------
+
